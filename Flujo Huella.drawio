@@ -1,0 +1,47 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="d8wElEniskC9_vPrAoRE">
+    <mxGraphModel dx="774" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OlZbVpgo5YF5UcTrZMGe-6" edge="1" parent="1" source="OlZbVpgo5YF5UcTrZMGe-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="OlZbVpgo5YF5UcTrZMGe-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OlZbVpgo5YF5UcTrZMGe-8" connectable="0" parent="OlZbVpgo5YF5UcTrZMGe-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Asigna" vertex="1">
+          <mxGeometry relative="1" x="0.025" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OlZbVpgo5YF5UcTrZMGe-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Coordinador" vertex="1">
+          <mxGeometry height="40" width="120" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OlZbVpgo5YF5UcTrZMGe-7" edge="1" parent="1" source="OlZbVpgo5YF5UcTrZMGe-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="OlZbVpgo5YF5UcTrZMGe-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OlZbVpgo5YF5UcTrZMGe-9" connectable="0" parent="OlZbVpgo5YF5UcTrZMGe-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Notificación&lt;div&gt;Wsp&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.05" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OlZbVpgo5YF5UcTrZMGe-11" edge="1" parent="1" source="OlZbVpgo5YF5UcTrZMGe-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="OlZbVpgo5YF5UcTrZMGe-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OlZbVpgo5YF5UcTrZMGe-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Colegio" vertex="1">
+          <mxGeometry height="40" width="120" x="280" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OlZbVpgo5YF5UcTrZMGe-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Monitor" vertex="1">
+          <mxGeometry height="40" width="120" x="520" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OlZbVpgo5YF5UcTrZMGe-10" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;" value="&lt;ul&gt;&lt;li&gt;Salas&lt;/li&gt;&lt;li&gt;Cursos (7mo a 4to Medio), 1 unidad (esta tiene 8 fases), es 1 unidad por curso&lt;/li&gt;&lt;li&gt;Topicos&lt;/li&gt;&lt;li&gt;Horarios&lt;/li&gt;&lt;li&gt;Profesor (Nombre, Correo, celular)&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="170" width="170" x="255" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="OlZbVpgo5YF5UcTrZMGe-13" edge="1" parent="1" source="OlZbVpgo5YF5UcTrZMGe-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="OlZbVpgo5YF5UcTrZMGe-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OlZbVpgo5YF5UcTrZMGe-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Evaluación&lt;div&gt;Alumnos&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="120" x="520" y="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

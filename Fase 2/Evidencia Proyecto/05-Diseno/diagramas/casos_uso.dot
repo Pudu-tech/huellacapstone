@@ -1,0 +1,5 @@
+digraph { graph [bgcolor="white",pad="0.25",nodesep="0.35",ranksep="0.55",fontname="Arial"]; node [shape=box,style="rounded,filled",fillcolor="#F0F4F7",color="#76889B",fontname="Arial",fontsize=13,margin="0.17,0.12"]; edge [color="#52677C",fontname="Arial",fontsize=11]; rankdir=LR; de[label="Directiva"]; co[label="Coordinador"]; mo[label="Monitor"]; subgraph cluster_sys {label="HuellApp";fontname="Arial";color="#CBD5E0"; acc[label="Acceder según rol",shape=ellipse]; users[label="Gestionar usuarios",shape=ellipse]; plan[label="Planificar actividades
+y participantes",shape=ellipse]; prog[label="Consultar programación
+y responder participación",shape=ellipse]; att[label="Registrar asistencia",shape=ellipse]; tick[label="Ticket de salida
+Comprometido pendiente",shape=ellipse,style="dashed,filled"]; track[label="Consultar seguimiento
+Contenido por acordar",shape=ellipse,style="dashed,filled"]; } de->acc;co->acc;mo->acc; de->users;de->plan;co->plan[label="Según permiso"];mo->prog;mo->att;mo->tick;de->track;co->track; }

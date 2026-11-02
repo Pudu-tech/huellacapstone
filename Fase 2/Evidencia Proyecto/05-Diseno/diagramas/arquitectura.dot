@@ -1,0 +1,7 @@
+digraph { graph [bgcolor="white",pad="0.25",nodesep="0.35",ranksep="0.55",fontname="Arial"]; node [shape=box,style="rounded,filled",fillcolor="#F0F4F7",color="#76889B",fontname="Arial",fontsize=13,margin="0.17,0.12"]; edge [color="#52677C",fontname="Arial",fontsize=11]; rankdir=TB; web[label="Usuario
+Navegador web"]; ui[label="Interfaz React y TypeScript"]; api[label="API FastAPI
+Reglas y permisos"]; auth[label="Supabase Auth
+Identidad y sesión"]; db[label="Supabase PostgreSQL
+Datos y funciones SQL"]; queue[label="Cola de notificaciones
+Webhook y despacho"]; mail[label="Proveedor de correo
+Brevo"]; web -> ui; ui -> auth[label="Inicia sesión"]; auth -> ui[label="Token"]; ui -> api[label="HTTPS y Bearer token"]; api -> auth[label="Valida identidad"]; api -> db[label="Operaciones de negocio"]; db -> queue[label="Aviso en cola"]; queue -> api[label="Webhook protegido"]; api -> mail[label="Despacha aviso"]; }

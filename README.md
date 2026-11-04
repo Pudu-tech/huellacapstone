@@ -1,125 +1,319 @@
-# Borradores documentales de HuellApp
+# HuellApp
 
-Corte de revisión: **27 de octubre de 2026**. Este paquete reúne **40 borradores Word, 8 libros Excel y sus 48 versiones Markdown**, más diagramas editables e índices de revisión. Los archivos se proponen para estudio del equipo; no sustituyen ni modifican las versiones oficiales ni acreditan aprobación de Fundación Huella.
+**Aplicación web para la planificación, coordinación y trazabilidad de las actividades de Fundación Huella.**
 
-El orden se apoya en el repositorio del Grupo 3: inicio, metodología, Scrum, requisitos, diseño, calidad, operación, gestión y evidencias. La redacción, requisitos, arquitectura, registros y decisiones se desarrollaron para HuellApp. No se trasladan sus cifras, resultados, clientes ni solicitudes de cambio. Se consolidan duplicados y no se crean sprints históricos inexistentes.
+HuellApp centraliza información de usuarios, colegios, cursos, contactos y actividades para apoyar el trabajo de Directiva, Coordinadores y Monitores. Su propósito es conectar lo que se planifica, las respuestas de quienes participan y los registros de lo realizado.
 
-## Cómo comenzar la revisión
+El proyecto es desarrollado por **Pudú Tech**, equipo de estudiantes de Ingeniería en Informática de **Duoc UC**, en el marco de su proyecto de título Capstone, para **Fundación Huella**.
 
-1. Revisar acta, definición del proyecto, SRS y Definition of Done. Son la base para los demás documentos.
-2. Cerrar con Huella ticket de salida, seguimiento mínimo, reportes, recordatorios y permisos. Los campos pendientes no deben adoptarse como compromisos por omisión.
-3. Conciliar requisitos y backlog con pruebas de una versión identificable. El código disponible y una issue cerrada no son aceptación funcional.
-4. Completar cronograma, riesgos, costos y responsables de operación con datos acordados.
-5. Revisar manuales y plan de traspaso. Después adaptar los borradores académicos al formato institucional y pauta vigentes.
+## Contenido
 
-Las decisiones confirmadas por Matías son entrega en diciembre de 2026, Matías como Project Manager, Felipe como Product Owner e Ignacio como Jefe de desarrollo. No se fija un día de entrega ni se presume que Huella haya firmado la actualización.
+- [El proyecto](#el-proyecto)
+- [Objetivos](#objetivos)
+- [Usuarios y permisos](#usuarios-y-permisos)
+- [Alcance y funcionalidades](#alcance-y-funcionalidades)
+- [Estado del proyecto](#estado-del-proyecto)
+- [Arquitectura](#arquitectura)
+- [Repositorios](#repositorios)
+- [Puesta en marcha](#puesta-en-marcha)
+- [Calidad y seguimiento](#calidad-y-seguimiento)
+- [Equipo](#equipo)
+- [Entrega y continuidad](#entrega-y-continuidad)
 
-## Cobertura y límites
+## El proyecto
 
-“Faltante” en la matriz significa que no se encontró el artefacto autónomo suficiente en la carpeta oficial revisada; no significa ausencia total de información sobre el tema. “Actualización” identifica versiones de documentos existentes o un antecedente propio que requiere ajustes. Las dos guías de sprint del ejemplo se cubren mediante una planificación de próxima iteración; las solicitudes de cambio se cubren con un formulario y registro propio, sin reproducir su historia.
+Fundación Huella trabaja con estudiantes mediante espacios de reflexión sobre temas relevantes para su desarrollo. La realización de estas actividades requiere coordinar colegios, personas, horarios y lugares, además de conservar información sobre la participación y ejecución de cada instancia.
 
-Se excluyeron archivos con APT122 y entregas personales con patrón Nombre_apellido_n.n. Las reflexiones individuales no se inventan ni se sustituyen. Las guías 1.4, 1.5, 2.4 y 2.6 sin APT122 se desarrollan como propuestas separadas. Sus originales permanecen intactos.
+Cuando estos antecedentes están distribuidos entre planillas, mensajería y documentos, resulta más difícil mantenerlos actualizados y consultar el estado de una actividad. HuellApp busca reunir los procesos prioritarios de la operación en una aplicación web, con acceso según las responsabilidades de cada usuario.
 
-La pauta final vigente y la terminología oficial de competencias deben comprobarse antes de afirmar cumplimiento académico. La documentación de otro grupo es una referencia de cobertura, no una rúbrica ni una prueba de que todos sus documentos sean obligatorios.
+La solución permitirá responder preguntas como:
 
-## Índices de control
+- ¿Qué actividades están programadas y dónde se realizarán?
+- ¿Quiénes están asignados y qué respuesta han entregado?
+- ¿Qué registros respaldan la asistencia y la realización de una actividad?
+- ¿Qué información necesitan Directiva y Coordinadores para dar seguimiento al trabajo?
 
-- [Comparación y criterios de selección](00-Control/Comparacion_y_Seleccion.md)
-- [Fuentes y revisión](00-Control/Fuentes_y_Revision.md)
-- [Decisiones por validar](00-Control/Decisiones_Pendientes.md)
-- [Matriz de cobertura editable](00-Control/Cobertura_Documental_HuellApp.xlsx)
+## Objetivos
 
-## Documentos por carpeta
+### Objetivo general
 
+Desarrollar y entregar a Fundación Huella una aplicación web funcional y validada que apoye la planificación, coordinación, registro y seguimiento de sus espacios de reflexión y actividades, conforme al alcance y los criterios de aceptación acordados.
 
-### 01-Inicio
+### Objetivos específicos
 
-- **DOC-01 Acta de constitución del proyecto HuellApp** · [Word](01-Inicio/Acta_Constitucion_HuellApp.docx) · [Markdown](01-Inicio/Acta_Constitucion_HuellApp.md)
-- **DOC-02 Definición del proyecto HuellApp** · [Word](01-Inicio/Definicion_Proyecto_HuellApp.docx) · [Markdown](01-Inicio/Definicion_Proyecto_HuellApp.md)
+1. Centralizar la información operativa de usuarios, colegios, cursos y contactos.
+2. Facilitar la planificación de actividades y la asignación de participantes.
+3. Permitir consultar la programación y registrar las respuestas de participación.
+4. Respaldar la ejecución mediante asistencia, ubicación y ticket de salida, según las reglas definidas con Huella.
+5. Apoyar el seguimiento mediante consultas, reportes y registros de auditoría con permisos diferenciados.
+6. Entregar documentación, código fuente y orientaciones para la utilización y continuidad de la solución.
 
-### 02-Metodologia
+## Usuarios y permisos
 
-- **DOC-03 Metodología de trabajo de HuellApp** · [Word](02-Metodologia/Metodologia_Trabajo_HuellApp.docx) · [Markdown](02-Metodologia/Metodologia_Trabajo_HuellApp.md)
+| Perfil | Propósito dentro de la solución |
+| --- | --- |
+| **Directiva** | Administrar información y actividades y consultar antecedentes para coordinar la operación de la fundación. |
+| **Coordinador** | Organizar y dar seguimiento a actividades y participantes dentro del ámbito y los permisos asignados. |
+| **Monitor** | Consultar sus actividades, responder a las asignaciones y registrar su participación y ejecución mediante las funciones habilitadas. |
+| **SUPERADMIN** | Realizar funciones de administración técnica autorizadas. Es un perfil técnico distinto de los roles operativos de Huella. |
 
-### 03-Scrum
+Los permisos se verifican en el backend. La visibilidad de una opción en la interfaz no constituye por sí sola una autorización para consultar o modificar información.
 
-- **DOC-04 Visión del producto HuellApp** · [Word](03-Scrum/Product_Vision_HuellApp.docx) · [Markdown](03-Scrum/Product_Vision_HuellApp.md)
-- **DOC-05 Product backlog de HuellApp** · [Word](03-Scrum/Product_Backlog_HuellApp.docx) · [Markdown](03-Scrum/Product_Backlog_HuellApp.md)
-- **DOC-06 Definition of Done de HuellApp** · [Word](03-Scrum/Definition_of_Done_HuellApp.docx) · [Markdown](03-Scrum/Definition_of_Done_HuellApp.md)
-- **DOC-07 Plan de la próxima iteración de HuellApp** · [Word](03-Scrum/Plan_Iteracion_HuellApp.docx) · [Markdown](03-Scrum/Plan_Iteracion_HuellApp.md)
-- **DOC-08 Informe de avance del incremento de HuellApp** · [Word](03-Scrum/Informe_Avance_Incremento_HuellApp.docx) · [Markdown](03-Scrum/Informe_Avance_Incremento_HuellApp.md)
-- **DOC-09 Retrospectiva de trabajo de HuellApp** · [Word](03-Scrum/Retrospectiva_HuellApp.docx) · [Markdown](03-Scrum/Retrospectiva_HuellApp.md)
+## Alcance y funcionalidades
 
-### 04-Requisitos
+La primera entrega comprende las siguientes capacidades:
 
-- **DOC-10 Especificación de requerimientos de HuellApp** · [Word](04-Requisitos/Especificacion_Requerimientos_HuellApp.docx) · [Markdown](04-Requisitos/Especificacion_Requerimientos_HuellApp.md)
-- **DOC-11 Requisitos no funcionales de HuellApp** · [Word](04-Requisitos/Requisitos_No_Funcionales_HuellApp.docx) · [Markdown](04-Requisitos/Requisitos_No_Funcionales_HuellApp.md)
+| Área                            | Capacidad contemplada                                                                                                   |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **Usuarios y acceso**           | Autenticación, creación e invitación de cuentas, habilitación y acceso según rol.                                       |
+| **Información institucional**   | Gestión de colegios, cursos, salas y contactos necesarios para organizar las actividades.                               |
+| **Actividades y asignaciones**  | Planificación de espacios de reflexión y otros tipos de actividad acordados, con participantes y datos de programación. |
+| **Respuestas de participación** | Confirmación o rechazo de una participación y tratamiento de cambios según las reglas aplicables.                       |
+| **Programación**                | Consulta de actividades asignadas, fechas, horarios, ubicación y detalles necesarios para participar.                   |
+| **Asistencia**                  | Registro asociado a la participación, con ubicación informada por el dispositivo y regularización según permisos.       |
+| **Ticket de salida**            | Registro de lo realizado y de los datos de cierre acordados para la actividad.                                          |
+| **Seguimiento y auditoría**     | Consultas, reportes mínimos y trazabilidad de los eventos definidos en el alcance detallado.                            |
 
-### 05-Diseno
+**Aceptar una asignación confirma la participación:** no equivale a registrar asistencia ni a declarar realizada la actividad. Estos registros representan momentos diferentes del proceso.
 
-- **DOC-12 Arquitectura de la solución HuellApp** · [Word](05-Diseno/Arquitectura_HuellApp.docx) · [Markdown](05-Diseno/Arquitectura_HuellApp.md)
-- **DOC-13 Diagramas de análisis y diseño de HuellApp** · [Word](05-Diseno/Diagramas_UML_HuellApp.docx) · [Markdown](05-Diseno/Diagramas_UML_HuellApp.md)
-- **DOC-14 Modelo de datos de HuellApp** · [Word](05-Diseno/Modelo_Datos_HuellApp.docx) · [Markdown](05-Diseno/Modelo_Datos_HuellApp.md)
+La ubicación respalda el registro informado por el dispositivo; no constituye una prueba infalible de presencia física. Su consulta y tratamiento deben respetar los permisos y condiciones acordados.
 
-### 06-Calidad
+### Recorrido operativo
 
-- **DOC-15 Plan de pruebas de HuellApp** · [Word](06-Calidad/Plan_Pruebas_HuellApp.docx) · [Markdown](06-Calidad/Plan_Pruebas_HuellApp.md)
-- **DOC-16 Informe del estado registrado de QA de HuellApp** · [Word](06-Calidad/Informe_Estado_QA_HuellApp.docx) · [Markdown](06-Calidad/Informe_Estado_QA_HuellApp.md)
+1. Directiva o el perfil autorizado crea e invita una cuenta.
+2. La persona completa la habilitación e inicia sesión.
+3. Se crea una actividad y se asignan sus participantes.
+4. Cada participante consulta la solicitud y registra su respuesta.
+5. El usuario consulta su programación y los detalles de la actividad.
+6. Se registra la asistencia y, al completar el flujo previsto, el ticket de salida.
+7. Los perfiles autorizados consultan los antecedentes de seguimiento.
 
-### 07-Operacion
+El recorrido describe el alcance del producto. Los pasos pendientes de completar o validar se indican en la sección siguiente.
 
-- **DOC-17 Manual técnico de HuellApp** · [Word](07-Operacion/Manual_Tecnico_HuellApp.docx) · [Markdown](07-Operacion/Manual_Tecnico_HuellApp.md)
-- **DOC-18 Guía de uso de HuellApp** · [Word](07-Operacion/Manual_Usuario_HuellApp.docx) · [Markdown](07-Operacion/Manual_Usuario_HuellApp.md)
-- **DOC-19 Plan de puesta en marcha y traspaso de HuellApp** · [Word](07-Operacion/Plan_Puesta_Marcha_Traspaso_HuellApp.docx) · [Markdown](07-Operacion/Plan_Puesta_Marcha_Traspaso_HuellApp.md)
-- **DOC-20 Propuesta de valor de HuellApp** · [Word](07-Operacion/Innovacion_Valor_HuellApp.docx) · [Markdown](07-Operacion/Innovacion_Valor_HuellApp.md)
+## Estado del proyecto
 
-### 08-Gestion/Planes
+La solución cuenta con código para autenticación y perfiles, gestión institucional, actividades, participantes, asistencia, auditoría y mecanismos de notificación. La disponibilidad de estos componentes no implica que todo el alcance haya sido aceptado por Fundación Huella.
 
-- **DOC-21 Plan de dirección del proyecto HuellApp** · [Word](08-Gestion/Planes/00_Plan_Direccion_HuellApp.docx) · [Markdown](08-Gestion/Planes/00_Plan_Direccion_HuellApp.md)
-- **DOC-22 Plan de gestión del alcance de HuellApp** · [Word](08-Gestion/Planes/01_Plan_Gestion_Alcance_HuellApp.docx) · [Markdown](08-Gestion/Planes/01_Plan_Gestion_Alcance_HuellApp.md)
-- **DOC-23 Plan de gestión de requerimientos de HuellApp** · [Word](08-Gestion/Planes/02_Plan_Gestion_Requerimientos_HuellApp.docx) · [Markdown](08-Gestion/Planes/02_Plan_Gestion_Requerimientos_HuellApp.md)
-- **DOC-24 Plan de gestión del cronograma de HuellApp** · [Word](08-Gestion/Planes/03_Plan_Gestion_Cronograma_HuellApp.docx) · [Markdown](08-Gestion/Planes/03_Plan_Gestion_Cronograma_HuellApp.md)
-- **DOC-25 Plan de gestión de costos de HuellApp** · [Word](08-Gestion/Planes/04_Plan_Gestion_Costos_HuellApp.docx) · [Markdown](08-Gestion/Planes/04_Plan_Gestion_Costos_HuellApp.md)
-- **DOC-26 Plan de gestión de calidad de HuellApp** · [Word](08-Gestion/Planes/05_Plan_Gestion_Calidad_HuellApp.docx) · [Markdown](08-Gestion/Planes/05_Plan_Gestion_Calidad_HuellApp.md)
-- **DOC-27 Plan de gestión de recursos de HuellApp** · [Word](08-Gestion/Planes/06_Plan_Gestion_Recursos_HuellApp.docx) · [Markdown](08-Gestion/Planes/06_Plan_Gestion_Recursos_HuellApp.md)
-- **DOC-28 Plan de gestión de comunicaciones de HuellApp** · [Word](08-Gestion/Planes/07_Plan_Gestion_Comunicaciones_HuellApp.docx) · [Markdown](08-Gestion/Planes/07_Plan_Gestion_Comunicaciones_HuellApp.md)
-- **DOC-29 Plan de gestión de riesgos de HuellApp** · [Word](08-Gestion/Planes/08_Plan_Gestion_Riesgos_HuellApp.docx) · [Markdown](08-Gestion/Planes/08_Plan_Gestion_Riesgos_HuellApp.md)
-- **DOC-30 Plan de gestión de adquisiciones de HuellApp** · [Word](08-Gestion/Planes/09_Plan_Gestion_Adquisiciones_HuellApp.docx) · [Markdown](08-Gestion/Planes/09_Plan_Gestion_Adquisiciones_HuellApp.md)
-- **DOC-31 Plan de gestión de interesados de HuellApp** · [Word](08-Gestion/Planes/10_Plan_Gestion_Interesados_HuellApp.docx) · [Markdown](08-Gestion/Planes/10_Plan_Gestion_Interesados_HuellApp.md)
-- **DOC-32 Plan de gestión de cambios de HuellApp** · [Word](08-Gestion/Planes/11_Plan_Gestion_Cambios_HuellApp.docx) · [Markdown](08-Gestion/Planes/11_Plan_Gestion_Cambios_HuellApp.md)
-- **DOC-33 Plan de gestión de configuración de HuellApp** · [Word](08-Gestion/Planes/12_Plan_Gestion_Configuracion_HuellApp.docx) · [Markdown](08-Gestion/Planes/12_Plan_Gestion_Configuracion_HuellApp.md)
+| Frente | Situación al corte de esta revisión |
+| --- | --- |
+| **Acceso, información institucional y asignaciones** | Componentes presentes en el repositorio; se debe mantener la relación entre implementación, criterios y evidencia de pruebas. |
+| **Asistencia** | Implementación y reglas disponibles para su verificación integral en el ambiente correspondiente. |
+| **Avisos por correo** | Mecanismo de cola y despacho disponible; su operación requiere configurar y comprobar los servicios de envío. |
+| **Ticket de salida** | Parte del alcance comprometido, con definición, implementación y validación pendientes de cierre. |
+| **Seguimiento del Coordinador y reportes mínimos** | Contenido y validación pendientes de completar conforme a lo acordado con Huella. |
+| **Recordatorios** | Eventos, canales y anticipación deben precisarse; no se presume incluido cualquier esquema de recordatorios. |
+| **Entrega y traspaso** | Requieren validación del producto, preparación operativa, documentación y conformidad. |
 
-### 08-Gestion/Anexos
+**Referencia técnica:** rama `develop`, commit [`d2b651f42703`](https://github.com/Pudu-tech/Desarrollo_HuellApp/commit/d2b651f4270388cca337303a1b8adc03dbc891e1), del 20 de octubre de 2026. Rama e issues revisadas el **2 de noviembre de 2026**. El [backlog de GitHub](https://github.com/Pudu-tech/Desarrollo_HuellApp/issues) conserva el seguimiento operativo; cerrar una issue no sustituye la evidencia de aceptación.
 
-- **DOC-34 Estructura de desglose del trabajo de HuellApp** · [Word](08-Gestion/Anexos/EDT_Diccionario_HuellApp.docx) · [Markdown](08-Gestion/Anexos/EDT_Diccionario_HuellApp.md)
-- **DOC-35 Solicitud y registro de cambios de HuellApp** · [Word](08-Gestion/Anexos/Solicitud_Registro_Cambios_HuellApp.docx) · [Markdown](08-Gestion/Anexos/Solicitud_Registro_Cambios_HuellApp.md)
+## Arquitectura
 
-### 09-Evidencias
+La aplicación separa interfaz, lógica de negocio e infraestructura de datos.
 
-- **DOC-36 Informe de evidencias de HuellApp** · [Word](09-Evidencias/Informe_Evidencias_HuellApp.docx) · [Markdown](09-Evidencias/Informe_Evidencias_HuellApp.md)
+```mermaid
+flowchart TD
+    U[Usuario] --> F[Interfaz web React y TypeScript]
+    F -->|Inicio de sesión| A[Supabase Auth]
+    A -->|Token de acceso| F
+    F -->|HTTPS y Bearer token| B[API FastAPI]
+    B -->|Validación de identidad| A
+    B -->|Reglas y operaciones autorizadas| D[PostgreSQL en Supabase]
+    D -->|Cola y webhook de notificaciones| B
+    B -->|Avisos configurados| C[Proveedor de correo]
+```
 
-### 10-Actualizaciones-Academicas
+| Componente | Tecnología | Función |
+| --- | --- | --- |
+| **Frontend** | React, TypeScript, Vite y React Router | Navegación, formularios y presentación de la información. |
+| **Backend** | Python, FastAPI y Pydantic | API, validaciones, permisos y reglas de aplicación. |
+| **Identidad** | Supabase Auth | Autenticación y gestión de la sesión. |
+| **Persistencia** | PostgreSQL en Supabase | Entidades, relaciones, restricciones y funciones SQL. |
+| **Despliegue** | Vercel | Alojamiento de frontend y backend según la configuración de cada ambiente. |
+| **Correo** | Brevo y mecanismo de despacho del backend | Envío de avisos cuando el servicio y sus credenciales están configurados. |
 
-- **DOC-37 Informe técnico de HuellApp para revisión** · [Word](10-Actualizaciones-Academicas/1.4_Informe_Tecnico_HuellApp_Actualizacion.docx) · [Markdown](10-Actualizaciones-Academicas/1.4_Informe_Tecnico_HuellApp_Actualizacion.md)
-- **DOC-38 Definición del Proyecto APT HuellApp para revisión** · [Word](10-Actualizaciones-Academicas/1.5_Definicion_Proyecto_HuellApp_Actualizacion.docx) · [Markdown](10-Actualizaciones-Academicas/1.5_Definicion_Proyecto_HuellApp_Actualizacion.md)
-- **DOC-39 Informe de desarrollo del Proyecto APT HuellApp para revisión** · [Word](10-Actualizaciones-Academicas/2.4_Desarrollo_Proyecto_HuellApp_Actualizacion.docx) · [Markdown](10-Actualizaciones-Academicas/2.4_Desarrollo_Proyecto_HuellApp_Actualizacion.md)
-- **DOC-40 Informe final del Proyecto APT HuellApp para revisión** · [Word](10-Actualizaciones-Academicas/2.6_Informe_Final_HuellApp_Borrador.docx) · [Markdown](10-Actualizaciones-Academicas/2.6_Informe_Final_HuellApp_Borrador.md)
+Las dependencias y sus versiones declaradas se encuentran en [`frontend/package.json`](https://github.com/Pudu-tech/Desarrollo_HuellApp/blob/develop/frontend/package.json) y [`backend/requirements.txt`](https://github.com/Pudu-tech/Desarrollo_HuellApp/blob/develop/backend/requirements.txt).
 
-## Planillas editables
+## Repositorios
 
-- Cobertura documental de HuellApp · [Excel](00-Control/Cobertura_Documental_HuellApp.xlsx) · [Markdown](00-Control/Cobertura_Documental_HuellApp.md)
-- Matriz de requerimientos y trazabilidad de HuellApp · [Excel](04-Requisitos/Matriz_Requerimientos_Trazabilidad_HuellApp.xlsx) · [Markdown](04-Requisitos/Matriz_Requerimientos_Trazabilidad_HuellApp.md)
-- Registro de riesgos de HuellApp · [Excel](08-Gestion/Anexos/Registro_Riesgos_HuellApp.xlsx) · [Markdown](08-Gestion/Anexos/Registro_Riesgos_HuellApp.md)
-- Presupuesto y costos pendientes de HuellApp · [Excel](08-Gestion/Anexos/Presupuesto_HuellApp.xlsx) · [Markdown](08-Gestion/Anexos/Presupuesto_HuellApp.md)
-- Matriz de adquisiciones de HuellApp · [Excel](08-Gestion/Anexos/Matriz_Adquisiciones_HuellApp.xlsx) · [Markdown](08-Gestion/Anexos/Matriz_Adquisiciones_HuellApp.md)
-- Matriz de responsabilidades de HuellApp · [Excel](08-Gestion/Anexos/Matriz_RACI_HuellApp.xlsx) · [Markdown](08-Gestion/Anexos/Matriz_RACI_HuellApp.md)
-- Cronograma propuesto de HuellApp · [Excel](08-Gestion/Anexos/Cronograma_HuellApp.xlsx) · [Markdown](08-Gestion/Anexos/Cronograma_HuellApp.md)
-- Backlog y trazabilidad de issues de HuellApp · [Excel](03-Scrum/Backlog_Issues_HuellApp.xlsx) · [Markdown](03-Scrum/Backlog_Issues_HuellApp.md)
+El proyecto mantiene separados el desarrollo de la aplicación y sus evidencias académicas.
 
-## Uso de las versiones Markdown
+| Repositorio | Contenido |
+| --- | --- |
+| [Desarrollo de HuellApp](https://github.com/Pudu-tech/Desarrollo_HuellApp) | Código fuente, configuración, migraciones, pruebas y documentación técnica de implementación. |
+| [Documentación Capstone](https://github.com/Pudu-tech/huellacapstone) | Definición del proyecto, informes, planificación y evidencias organizadas por fase académica. |
 
-Cada Word tiene una versión de lectura Markdown del mismo corte. En las planillas, Markdown es una fotografía legible y Excel conserva fórmulas y campos editables. Si se modifica un archivo, actualizar su contraparte antes de publicar. Los diagramas incluyen PNG, SVG y fuente DOT en 05-Diseno/diagramas.
+### Organización del código
 
-Los costos externos y fechas específicas desconocidos están sin completar. “n.a.” en cálculos significa que falta un dato para calcular, no un costo cero. Las celdas amarillas de las planillas identifican campos de trabajo; los datos importados se conservan como referencia del corte indicado.
+```text
+Desarrollo_HuellApp/
+├── frontend/
+│   ├── src/                 # Interfaz, rutas y servicios de la aplicación
+│   ├── tests/               # Archivos de pruebas del frontend
+│   └── package.json         # Dependencias y scripts
+├── backend/
+│   ├── app/                 # API, configuración y servicios
+│   ├── tests/               # Pruebas del backend
+│   └── requirements.txt     # Dependencias de Python
+├── supabase/
+│   ├── migrations/          # Evolución del esquema y funciones SQL
+│   ├── seeds/               # Estado del versionado de datos maestros
+│   ├── tests/               # Pruebas SQL
+│   └── docs/                # Consultas de verificación
+└── docs/                    # Guías de módulos e implementación
+```
 
-Los PDF y capturas usados en la revisión visual no forman parte de este paquete. Tampoco se incluyen datos de usuarios, credenciales, SQL del otro proyecto ni documentos firmados artificialmente.
+### Documentación académica
+
+- [Fase 1](https://github.com/Pudu-tech/huellacapstone/tree/main/Fase%201): antecedentes de definición, evaluación y planificación inicial.
+- [Fase 2](https://github.com/Pudu-tech/huellacapstone/tree/main/Fase%202): desarrollo, seguimiento y evidencias de avance.
+- [Fase 3](https://github.com/Pudu-tech/huellacapstone/tree/main/Fase%203): carpeta destinada a las evidencias de la fase final.
+- [Flujo de Huella](https://github.com/Pudu-tech/huellacapstone/blob/main/Flujo%20Huella.drawio): antecedente de modelamiento del proceso.
+
+La presencia de una carpeta o documento no acredita su aprobación ni el cierre de la fase. Las versiones históricas se conservan como antecedentes; el acta, el alcance y los criterios vigentes deben identificarse por versión.
+
+## Puesta en marcha
+
+Las instrucciones siguientes corresponden al **repositorio de desarrollo** y a un entorno local de pruebas.
+
+### Requisitos previos
+
+- Git.
+- Node.js y npm compatibles con las dependencias del frontend.
+- Python 3 compatible con las dependencias del backend.
+- Acceso autorizado a un proyecto Supabase preparado para desarrollo o QA.
+- Variables de entorno y una cuenta de prueba con perfil y rol válidos.
+
+La clonación del repositorio no crea automáticamente la base de datos, los datos maestros ni las cuentas de acceso. Las versiones de los runtimes deben fijarse y comprobarse con la configuración de despliegue del equipo.
+
+### Obtener el código
+
+```bash
+git clone --branch develop https://github.com/Pudu-tech/Desarrollo_HuellApp.git
+cd Desarrollo_HuellApp
+```
+
+### Configurar el entorno
+
+Crear `frontend/.env.local` con los valores del ambiente autorizado:
+
+```dotenv
+VITE_API_URL=http://127.0.0.1:8000
+VITE_SUPABASE_URL=https://TU_PROYECTO.supabase.co
+VITE_SUPABASE_PUBLISHABLE_KEY=TU_CLAVE_PUBLICA
+```
+
+Crear `backend/.env`:
+
+```dotenv
+APP_ENV=development
+FRONTEND_URL=http://localhost:5173
+CORS_ORIGINS=["http://localhost:5173"]
+SUPABASE_URL=https://TU_PROYECTO.supabase.co
+SUPABASE_SECRET_KEY=TU_CLAVE_PRIVADA_DE_SERVIDOR
+```
+
+Los valores anteriores son marcadores de ejemplo. La clave privada de Supabase y las credenciales de proveedores pertenecen al backend; no deben incorporarse a variables `VITE_*`, capturas, logs públicos o commits.
+
+Las variables adicionales de correo y geocodificación se configuran únicamente si se habilitan esos servicios. Su detalle está en [`backend/app/core/config.py`](https://github.com/Pudu-tech/Desarrollo_HuellApp/blob/develop/backend/app/core/config.py), la [guía de correo](https://github.com/Pudu-tech/Desarrollo_HuellApp/blob/develop/docs/correos_vercel.md) y la [guía de asistencia](https://github.com/Pudu-tech/Desarrollo_HuellApp/blob/develop/docs/asistencia.md).
+
+### Iniciar el backend
+
+Desde la raíz del código, en Windows PowerShell:
+
+```powershell
+cd backend
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --reload
+```
+
+En macOS o Linux, utilizar `.venv/bin/python` en lugar de `.\.venv\Scripts\python.exe`.
+
+El servidor local utiliza por defecto `http://127.0.0.1:8000`. En configuración de desarrollo, la documentación interactiva de la API se encuentra en `/docs`.
+
+### Iniciar el frontend
+
+En otra terminal, desde la raíz del código:
+
+```bash
+cd frontend
+npm ci
+npm run dev
+```
+
+Abrir la URL indicada por Vite, normalmente `http://localhost:5173`. El origen utilizado debe coincidir con la configuración CORS del backend y las URL permitidas de autenticación.
+
+### Preparar la base de datos
+
+Revisar el [README de Supabase](https://github.com/Pudu-tech/Desarrollo_HuellApp/blob/develop/supabase/README.md), las migraciones posteriores y el estado de los datos maestros antes de crear un ambiente nuevo. El baseline documenta un esquema existente y no garantiza por sí solo una instalación completa desde cero.
+
+No volver a ejecutar el baseline sobre una base existente. Las migraciones deben revisarse según sus dependencias, el ambiente y el historial aplicado. Los cambios que reconstruyen estructuras o eliminan datos requieren una preparación específica.
+
+El [registro de seeds](https://github.com/Pudu-tech/Desarrollo_HuellApp/blob/develop/supabase/seeds/README_SEEDS.md) identifica datos maestros pendientes de versionar. Los datos ficticios de QA se mantienen separados de la información real autorizada por Huella.
+
+### Ambiente de desarrollo compartido
+
+La URL utilizada para las pruebas guiadas es [HuellApp en Vercel](https://huellapp-frontend-git-develop-huell-app.vercel.app/). Requiere una cuenta autorizada y puede cambiar con los despliegues de desarrollo; no representa por sí sola una entrega productiva aceptada.
+
+## Calidad y seguimiento
+
+El trabajo se organiza mediante un backlog priorizado, desarrollo incremental, revisión de avances, pruebas y actualización documental, bajo un enfoque Scrum adaptado al contexto del proyecto.
+
+Cada funcionalidad debe relacionar:
+
+**Necesidad → requisito → tarea → implementación → prueba → evidencia de aceptación.**
+
+El cierre requiere comprobar criterios, permisos, manejo de errores y persistencia cuando corresponda. Los resultados de QA deben identificar fecha, entorno, rol, versión, responsable y evidencia. Las correcciones requieren repetir las pruebas afectadas.
+
+### Comprobaciones técnicas
+
+Desde `frontend/`:
+
+```bash
+npm run build
+npm run lint
+```
+
+El `package.json` revisado no declara un script `npm test`. Los archivos de prueba existentes deben ejecutarse conforme a su mecanismo documentado.
+
+El backend contiene pruebas con `unittest`. Desde `backend/`, con dependencias y configuración de prueba preparadas:
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s tests -p "test_*.py"
+```
+
+La presencia de estos comandos o de archivos de prueba no implica que los controles estén aprobados. La aceptación se basa en los resultados registrados para la versión entregada, el alcance acordado y el **Definition of Done** vigente.
+
+Para reportar un problema, registrar la funcionalidad afectada, pasos para reproducir, resultado esperado, resultado observado, entorno, versión y evidencia sin datos sensibles.
+
+## Equipo
+
+**Pudú Tech** es el nombre del equipo desarrollador; no corresponde a una empresa constituida.
+
+| Integrante | Rol | Responsabilidad principal |
+| --- | --- | --- |
+| **Matías Eduardo Morales Inzulza** | Project Manager | Coordinación general, planificación, documentación y seguimiento de evidencias y compromisos. |
+| **Felipe Ignacio Ferrada Pacheco** | Product Owner | Comunicación directa con Huella, aclaración de necesidades, priorización y revisión funcional. |
+| **Ignacio Alonso Messina Luna** | Jefe de desarrollo | Coordinación técnica, arquitectura, desarrollo, integración y calidad de los incrementos. |
+
+La contraparte institucional es **Isadora Roos Pizarro, Directora Ejecutiva de Fundación Huella**. Los roles del equipo permiten colaboración en desarrollo, pruebas y documentación según las necesidades del proyecto.
+
+## Entrega y continuidad
+
+La planificación contempla una entrega funcional durante **diciembre de 2026**, acompañada de código fuente, documentación de uso y técnica, resultados de pruebas y registro de validación y conformidad. El día de entrega y los hitos específicos se precisarán en la planificación acordada.
+
+La propuesta de continuidad contempla **tres meses de soporte correctivo desde la firma de conformidad**, bajo las condiciones que se formalicen en el acta vigente. La administración posterior, el mantenimiento adicional y las nuevas funcionalidades requieren acuerdos específicos.
+
+El desarrollo académico se realiza sin cobro de honorarios a Fundación Huella. Los servicios externos necesarios para operar la aplicación deben tener costos, titulares y responsables definidos; no se presume que su operación sea gratuita o esté financiada por el equipo.
+
+Los permisos de uso, modificación, mantenimiento por terceros y reutilización del código se formalizan en los acuerdos correspondientes. Los datos, contenidos e información confidencial de Huella se tratan conforme a las autorizaciones y obligaciones asumidas. Este README no sustituye dichos acuerdos ni asigna una licencia de software por sí mismo.
+
+### Evolución posterior
+
+Podrán evaluarse ampliaciones como la vinculación con una plataforma de e-learning, una aplicación móvil nativa, analítica avanzada u otras necesidades de Huella. Su incorporación requerirá definir alcance, responsables, plazos, costos y criterios de aceptación mediante un anexo o acuerdo específico.
+
+WhatsApp y otros servicios de mensajería no se consideran incluidos automáticamente: su necesidad, integración y costo deben evaluarse y acordarse.
+
+---
+
+**Última revisión del README:** 2 de noviembre de 2026.

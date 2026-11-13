@@ -6,6 +6,8 @@ HuellApp centraliza información de usuarios, colegios, cursos, contactos y acti
 
 El proyecto es desarrollado por **Pudú Tech**, equipo de estudiantes de Ingeniería en Informática de **Duoc UC**, en el marco de su proyecto de título Capstone, para **Fundación Huella**.
 
+**Estado:** en desarrollo y validación. **Entrega funcional prevista:** diciembre de 2026.
+
 ## Contenido
 
 - [El proyecto](#el-proyecto)
@@ -63,16 +65,16 @@ Los permisos se verifican en el backend. La visibilidad de una opción en la int
 
 La primera entrega comprende las siguientes capacidades:
 
-| Área                            | Capacidad contemplada                                                                                                   |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **Usuarios y acceso**           | Autenticación, creación e invitación de cuentas, habilitación y acceso según rol.                                       |
-| **Información institucional**   | Gestión de colegios, cursos, salas y contactos necesarios para organizar las actividades.                               |
-| **Actividades y asignaciones**  | Planificación de espacios de reflexión y otros tipos de actividad acordados, con participantes y datos de programación. |
-| **Respuestas de participación** | Confirmación o rechazo de una participación y tratamiento de cambios según las reglas aplicables.                       |
-| **Programación**                | Consulta de actividades asignadas, fechas, horarios, ubicación y detalles necesarios para participar.                   |
-| **Asistencia**                  | Registro asociado a la participación, con ubicación informada por el dispositivo y regularización según permisos.       |
-| **Ticket de salida**            | Registro de lo realizado y de los datos de cierre acordados para la actividad.                                          |
-| **Seguimiento y auditoría**     | Consultas, reportes mínimos y trazabilidad de los eventos definidos en el alcance detallado.                            |
+| Área | Capacidad contemplada |
+| --- | --- |
+| **Usuarios y acceso** | Autenticación, creación e invitación de cuentas, habilitación y acceso según rol. |
+| **Información institucional** | Gestión de colegios, cursos, salas y contactos necesarios para organizar las actividades. |
+| **Actividades y asignaciones** | Planificación de espacios de reflexión y otros tipos de actividad acordados, con participantes y datos de programación. |
+| **Respuestas de participación** | Confirmación o rechazo de una participación y tratamiento de cambios según las reglas aplicables. |
+| **Programación** | Consulta de actividades asignadas, fechas, horarios, ubicación y detalles necesarios para participar. |
+| **Asistencia** | Registro asociado a la participación, con ubicación informada por el dispositivo y regularización según permisos. |
+| **Ticket de salida** | Registro de lo realizado y de los datos de cierre acordados para la actividad. |
+| **Seguimiento y auditoría** | Consultas, reportes mínimos y trazabilidad de los eventos definidos en el alcance detallado. |
 
 **Aceptar una asignación confirma la participación:** no equivale a registrar asistencia ni a declarar realizada la actividad. Estos registros representan momentos diferentes del proceso.
 
